@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA Documentation</title>
+ <style>
+    body{
+        border-style:dashed dashed;
+        background-image: linear-gradient( rgb(64, 64, 178) , white , rgb(64, 235, 235));
+        margin: 50px;
+        font-size: larger;
+        border-image-outset: 100px;
+    }
+    div.main-body{
+      display: grid;
+      grid-template-columns: minmax(300px , auto)1fr;
+      grid-template-areas: "navbar mainContents";
+    }
+
+    nav#navbar {
+        grid-area: navbar;
+        position: fixed;
+        padding: 100px;
+         
+    }
+    nav#navbar a {
+    display: block;
+    background-color: aliceblue;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: black;
+}
+img{
+    border-image: round;
+}
+   
+main#main-doc {
+    grid-area: mainContent;
+    padding: 100px;
+}
+  
+header {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+ </style>
+</head>
+<body>
+    <div class="main-body">
+    <nav id ="navbar">
+        <header>Documentation Menu</header>
+        <a href="#history" class="nav-link">History</a>
+        <a href="#intro" class = "nav-link">What is Java</a>
+        <a href="#application" class="nav-link">Application</a>
+         <a href="#feature" class="nav-link">Features of Java</a>
+         <a href="#types" class="nav-link">Data Types</a>
+         <a href="#code" class="nav-link">UniCode</a>
+         <a href="#operator" class="nav-link">Operator</a>
+    </nav>
+    <main id ="main-doc">
+        <section class ="main-section" id="history">
+            <header>History of Java </header>
+            <p>
+                The history of Java is very interesting. Java was originally designed for interactive television, but it was too advanced technology for the digital cable television industry at the time. The history of Java starts with the Green Team. Java team members (also known as Green Team), initiated this project to develop a language for digital devices such as set-top boxes, televisions, etc. However, it was best suited for internet programming. Later, Java technology was incorporated by Netscape.
+
+                The principles for creating Java programming were "Simple, Robust, Portable, Platform-independent, Secured, High Performance, Multithreaded, Architecture Neutral, Object-Oriented, Interpreted, and Dynamic". Java was developed by James Gosling, who is known as the father of Java, in 1995. James Gosling and his team members started the project in the early '90s.</p>
+                <img src="project images/James_Gosling.jpg" width="300px" alt="James">
+                 <p> James Gosling - founder of java
+                Currently, Java is used in internet programming, mobile devices, games, e-business solutions, etc. Following are given significant points that describe the history of Java
+                <ol>
+                    <li> <mark> James Gosling, </mark> Mike Sheridan, and Patrick Naughton initiated the Java language project in June 1991. The small team of sun engineers called Green Team. </li>
+                    <li>  Initially it was designed for small, embedded systems in electronic appliances like set-top boxes</li>
+                    <li> Firstly, it was called "Greentalk" by James Gosling, and the file extension was .gt.</li>
+                    <li> After that, it was called Oak and was developed as a part of the Green project.</li>
+                </ol>
+            </p>
+           </section>
+     <section class ="main-section" id="intro">
+     <header>What is Java ?</header>
+     <p><b>Java</b> is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language.
+
+         Java was developed by Sun Microsystems (which is now the subsidiary of Oracle) in the year 1995. James Gosling is known as the father of Java. Before Java, its name was Oak. Since Oak was already a registered company, so James Gosling and his team changed the name from Oak to Java.
+        
+        Platform: Any hardware or software environment in which a program runs, is known as a platform. Since Java has a runtime environment (JRE) and API, it is called a platform.
+     </p>
+     </section>
+     <section class="main-section" id="application">
+     <header>Application</header>
+     <p>According to Sun, 3 billion devices run Java. There are many devices where Java is currently used. Some of them are as follows:
+        <ul>
+       <li> Desktop Applications such as acrobat reader, media player, antivirus, etc.</li>
+       <li> Web Applications such as irctc.co.in, javatpoint.com, etc.</li>
+       <li> Enterprise Applications such as banking applications.</li>
+       <li> Mobile</li>
+       <li> Embedded System</li> 
+        <li> Card</li> 
+        <li> Robotics</li>
+        <li> Games, etc.</li>
+    </ul>
+</p>
+    </section>
+    <section class ="main-section" id="feature">
+        <header>Features of Java </header>
+        <p>The primary objective of Java programming language creation was to make it portable, simple and secure programming language. Apart from this, there are also some excellent features which play an important role in the popularity of this language. The features of Java are also known as Java buzzwords.
+
+            A list of the most important features of the Java language is given below.!
+            <ul>
+              <li> Simple </li>
+              <li> Object-Oriented</li>
+               <li> Portable
+               <li> Platform independent</li> 
+               <li> Secured</li> 
+               <li> Robust</li> 
+               <li> Architecture neutral</li> 
+               <li> Interpreted</li> 
+               <li> High Performance</li> 
+               <li> Multithreaded</li> 
+               <li> Distributed</li> 
+               <li> Dynamic</li> 
+            </ul>
+        </p>
+       </section>
+       <section class ="main-section" id="types">
+        <header>Data Types in java </header>
+        <p>
+            Data types specify the different sizes and values that can be stored in the variable. There are two types of data types in Java:
+            <ol>
+                <li> <b>Primitive data types:</b>  The primitive data types include boolean, char, byte, short, int, long, float and double.</li>
+                <li> <b>Non-primitive data types:</b> The non-primitive data types include Classes, Interfaces, and Arrays. </li>
+            </ol>
+            <img src="project images/pasted image 0.png "width="500px" alt="datatypes">
+            <h3> <b>Primitive data types </b> </h3>
+            <p>In Java language, primitive data types are the building blocks of data manipulation. These are the most basic data types available in Java language.</p>
+            <ul>
+                <li> boolean data type </li>
+                <li> byte data type </li>
+                <li> char data type</li>
+                <li> short data type</li>
+                <li> int data type</li>
+                <li> long data type</li>
+                <li> float data type</li>
+                <li> double data type</li>
+            </ul>
+        </p>
+       </section>
+       <section class ="main-section" id="code">
+        <header>UniCodes in Java ?</header>
+        <p>
+            Unicode is a universal international standard character encoding that is capable of representing most of the world's written languages.
+            <h4>Why java uses Unicode System ?</h4>
+            <p> Before Unicode, there were many language standards:
+                <ol>
+                    <li> <b>ASCII</b>  (American Standard Code for Information Interchange) for the United States. </li>
+                    <li> <b>ISO 8859-1</b> for Western European Language. </li>
+                    <li>  <b>KOI-8</b> for Russian</li>
+                    <li> <b>GB18030 and BIG-</b> 5 for chinese, and so on.</li>
+                </ol>
+            </p>
+        </p>
+       </section>
+       <section class ="main-section" id="operator">
+        <header>Operators in Java ?</header>
+        <p>Operator in Java is a symbol that is used to perform operations. For example: +, -, *, / etc.
+            There are many types of operators in Java which are given below:
+            <ul>
+                <li> Unary Operator,</li>
+                <li> Arithmetic Operator, </li>
+                <li> Shift Operator</li>
+                <li> Relational Operator,</li>
+                <li> Bitwise Operato</li>
+                <li> Logical Operator</li>
+                <li> Ternary Operator and</li>
+                <li> Assignment Operator.</li>
+            </ul>
+            <img src="project images/Operators-in-Java-with-Examples.jpeg" width="500px" alt="operator">
+        </p>
+       </section>
+    </main>
+</div>
+</body>
+</html>
